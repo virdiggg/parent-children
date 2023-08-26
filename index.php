@@ -63,7 +63,7 @@ if (!function_exists('parseChildrenAlt')) {
 		$array = $tree;
 		unset($tree);
 
-		$result = array();
+		$result = [];
 		for($j = 0; $j < count($array); $j++) {
 			if (isset($array[$j][$children_val]) && !isset($array[$j][$head_key])) {
 				$result = array_merge($result, $array[$j][$children_val]);
